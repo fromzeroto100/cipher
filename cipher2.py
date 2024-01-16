@@ -16,12 +16,11 @@ def encrypt(plain_text, shift_amount):
   #'text' and 'shift' as inputs.
 def decrypt(cipher_text, shift_amount):
   plain_text = ""
-  
   for letter in cipher_text:
     position = alphabet.index(letter)
     new_position = position - shift_amount
     plain_text += alphabet[new_position]
-print(f"The decoded text is {plain_text}")        
+  print(f"The decoded text is {plain_text}")       
         
         
 
